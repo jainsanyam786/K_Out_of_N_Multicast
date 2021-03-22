@@ -1,4 +1,4 @@
-#Topology for Assignment 5 Comnetii ECE423/544
+#Multicasting Project Comnetii ECE423/544
 #Author: Sanyam Jain
 from socket import socket, AF_INET, SOCK_DGRAM
 import MulticastPacket as p

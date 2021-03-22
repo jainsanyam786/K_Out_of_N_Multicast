@@ -1,5 +1,5 @@
 #Multicasting Project Comnetii ECE423/544
-#Author: Team1
+#Author: Sanyam Jain
 
 import HostDictionary as hD
 import sys
@@ -85,7 +85,7 @@ class Routing:
                     temp[key1] = temp1
                     a.append(temp)
             RouterDictionary[key] = a
-        file1 = open('I:\Class\CommNets2\Assignment_6\LOCAL\Project\HostDictionary.py', 'a')
+        file1 = open('HostDictionary.py', 'a')
         s="RoutingTables="+str(RouterDictionary)+"\n"
         file1.write(s)
         file1.close()
@@ -120,7 +120,7 @@ class Routing:
                     outlist["cost"] = cost
                     outlist["Totalcost"] = Totalcost
                     multicastTable[i] = outlist
-        file1 = open('I:\Class\CommNets2\Assignment_6\LOCAL\Project\HostDictionary.py', 'a')
+        file1 = open('HostDictionary.py', 'a')
         s="MulticastTable="+str(multicastTable)+"\n"
         file1.write(s)
         file1.close()
