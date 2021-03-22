@@ -4,7 +4,7 @@
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
-* [Code](#code)
+* [Algorithm](#algorithm)
 * [Examples](#examples)
 * [Setup](#Setup)
 * [Reference](#reference)
@@ -27,7 +27,7 @@
 * Virtual tool to create network topologies - Mininet
 * Scripting Language -  Python3.
 
-## Code
+## Algorithm
 * Routing Algorithm:
   * LS protocol based on Dijkstra’s shortest path algorithm is used as baseline routing protocol to create a routing table for each router in the network.
   * Routing tables will provide us info about number of hosts connected to a router and their cost.
@@ -47,27 +47,10 @@
   * Source sends packet to selected router and at that router sends packet to destinations.
   * At the selected router for the destinations with the same next hop there will be a unified packet but for the destinations with different next hop the packet splits up.
 * Below is flow chat of “k-out-of-n” multicast
-  <img src="./Img/flow_chart.png" alt="data_corr" width="500" height="500"/>
+<img src="./Img/Flow_Chart.png" alt="Flow_Chart" width="500" height="500"/>
 
   
 ## Examples
-* Correlation matrix for data.
-<img src="./img/data_corr.png" alt="data_corr" width="500" height="500"/>
-
-* Logistic Regression based classifier with SMOTE (Left - Training Data & Right - Testing Data).
-<img src="./img/Image1.png" alt="Image1" width="800" height="500"/>
-
-* Logistic Regression based classifier with ADASYN (Left - Training Data & Right - Testing Data).
-<img src="./img/Image2.png" alt="Image2" width="800" height="500"/>
-
-* SVM based classifier with SMOTE (Left - Training Data & Right - Testing Data).
-<img src="./img/Image3.png" alt="Image3" width="800" height="500"/>
-
-* SVM based classifier with ADASYN (Left - Training Data & Right - Testing Data).
-<img src="./img/Image4.png" alt="Image4" width="800" height="500"/>
-
-* Comparing all models based on Accuracy, Precision, Recall, F1 score, and RUC_AUC_SCORE.
-<img src="./img/Image6.png" alt="Image6" width="1200" height="150"/>
 
 ## Demo
 * In terms of overall accuracy logistic regression is better.
