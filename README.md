@@ -1,12 +1,12 @@
-# Predicting Covid Mortality with Machine Learning.
+# K_Out_of_N_Multicast.
 > This project aims to design a “k-out-of-n” multicast system which can be used to optimize seleective multicasting. Such system can be used to quick alerts in case of emergency to few of available locations. The locations are selected to in such a way that time and cost of multicasting are minimum. 
 
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Algorithm](#algorithm)
-* [Examples](#examples)
 * [Setup](#Setup)
+* [Demo](#demo)
 * [Reference](#reference)
 
 ## General info
@@ -47,16 +47,33 @@
   * Source sends packet to selected router and at that router sends packet to destinations.
   * At the selected router for the destinations with the same next hop there will be a unified packet but for the destinations with different next hop the packet splits up.
 * Below is flow chat of “k-out-of-n” multicast
-<img src="./Img/Flow_Chart.png" alt="Flow_Chart" width="500" height="500"/>
+<img src="./Img/Flow_Chart.png" alt="Flow_Chart" width="700" height="500"/>
 
-  
-## Examples
+## Setup
+* Install Mininet virtual networking image in virtual box.
+* Install python3 in Mininet image.
+* Copy python scripts :: **HostDictionary.py, Routing.py, Source.py, Router.py, Host.py and topology script**.
+* Execute Routing.py with argument createRoutingTable to create Routing Tables and Multicast Table.These will be writtern in HostDictionary.py 
+* Execute topology python script to create topology(Network_1/topo1.py or Network_2/network_topo_2.py).
+* Verify the topology using ping commands from host to destinations.
+* Execute Host.py on Host nodes as Host.py <nodeid>
+* Execute Router.py on Router nodes as Router.py <nodeid>.  
+* Execute Source.py on source node as Source.py <nodeid>.
 
 ## Demo
-* In terms of overall accuracy logistic regression is better.
-* In terms of F1 score and Precision logistic regression is way better than SVM.
-* In terms of ROC_AUC_SCORE and Recall SVM is better but, the difference is small.
-### Logistic regression-based model correctly predicts if the person will survive or not better than SVM based model.
+* Demonstrartion for Network 1.
+<img src="./Img/Network1.png" alt="Network1" width="500" height="200"/>
+ * Mulicast table using routing and multicast algorithm on Network 1.
+<img src="./Img/Multicast1.png" alt="Mulicast1" width="500" height="200"/>
+ * Results for different values of k.
+<img src="./Img/Result_Network1.png" alt="Result_Network1" width="500" height="500"/>
+
+* Demonstrartion for Network 2.
+<img src="./Img/Network2.png" alt="Network2" width="500" height="200"/>
+ * Mulicast table using routing and multicast algorithm on Network 2.
+<img src="./Img/Multicast2.png" alt="Mulicast2" width="500" height="200"/>
+ * Results for different values of k.
+<img src="./Img/Result_Network2.png" alt="Result_Network2" width="500" height="500"/>
 
 ## Reference
 * [Predicting CoVID-19 community mortality risk using machine learning and development of an online prognostic tool, 2020 by Das et al](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7528809/pdf/peerj-08-10083.pdf)
