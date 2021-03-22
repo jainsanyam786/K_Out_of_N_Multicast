@@ -64,7 +64,7 @@
 * Demonstrartion for Network 1.
 <img src="./Img/Network1.png" alt="Network1" width="500" height="200"/>
  * Mulicast table using routing and multicast algorithm on Network 1.
-<img src="./Img/Multicast1.png" alt="Mulicast1" width="500" height="200"/>
+<img src="./Img/Multicast.png" alt="Multicast" width="500" height="200"/>
  * Results for different values of k.
 <img src="./Img/Result_Network1.png" alt="Result_Network1" width="500" height="500"/>
 
